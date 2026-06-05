@@ -1,1 +1,1 @@
-"# genai-soc-2026" 
+# genai-soc-2026 
