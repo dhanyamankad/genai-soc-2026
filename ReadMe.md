@@ -1,7 +1,7 @@
 # genai-soc-2026
 
 ## 📋 Week 0 Checklist
-- ✅ Python 3.10+ installed and working.
+- ✅ Python 3.14.3 installed and working.
 - ✅ VS Code installed with the Python extension.
 - ✅ Virtual environment working.
 - ✅ .env file pattern works.
