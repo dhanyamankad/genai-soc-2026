@@ -31,14 +31,6 @@ This repository documents my journey of learning and building with Generative AI
 - ✅ Generated and tested Groq API Key
 - ✅ Successfully made first API call
 
-### Key Learnings
-
-- Python Development Environment
-- Virtual Environments
-- Git Workflow
-- GitHub Repositories
-- API Keys & Environment Variables
-
 ---
 
 ## 🤖 Week 1 — PromptForge: Multi-Persona AI Assistant
@@ -63,13 +55,3 @@ Analyzes code and returns structured JSON feedback with issues, suggestions, and
 
 🔹 **Creative Writer**
 Generates vivid, cinematic narrative prose.
-
-🔹 **Additional Functionality**
-- Persona Switching via Dropdown
-- System Prompt Engineering
-- Few-Shot Prompting
-- Streaming Responses (token by token)
-- Structured JSON Outputs with Markdown Rendering
-- Temperature Control Slider
-- Interactive Gradio Interface
-
