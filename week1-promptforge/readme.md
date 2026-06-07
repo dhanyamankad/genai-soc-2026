@@ -8,7 +8,7 @@ few-shot examples, and output style. Built as Week 1 project for GenAI Summer of
 ## 🚀 How to Run Locally
 
 1. Clone the repo
-   git clone https://github.com/YOUR_USERNAME/genai-soc-2026.git
+   git clone https://github.com/dhanyamankad/genai-soc-2026.git
    cd genai-soc-2026/week1-promptforge
 
 2. Create and activate a virtual environment
