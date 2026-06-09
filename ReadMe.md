@@ -85,13 +85,3 @@ Tested with out-of-scope questions — model correctly says "I don't have that i
 
 🔹 **Retrieved Context Panel**
 Collapsible accordion shows the exact chunks used to generate each answer — great for understanding how RAG works under the hood.
-
-### 🛠 Tech Stack
-| Tool | Purpose |
-|---|---|
-| Gradio | Web UI |
-| PyPDF | PDF text extraction |
-| LangChain | RAG pipeline orchestration |
-| HuggingFace `all-MiniLM-L6-v2` | Local embeddings |
-| ChromaDB | Vector database |
-| Groq `llama-3.1-8b-instant` | LLM for answer generation |
