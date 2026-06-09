@@ -8,11 +8,9 @@ Built for **Week 2 of Summer of Code** by [Dhanya Mankad](https://github.com/dha
 
 ## 🖼 App in Action
 
-> `screenshots/app_working.png`
+![App Working](screenshots/app_working.png)
 
-> *(Add your retrieved context screenshot here — accordion open)*
-> `screenshots/retrieved_context.png`
-
+![Retrieved Context](screenshots/retrieved_context.png)
 ---
 
 ## 🤖 What is RAG?
