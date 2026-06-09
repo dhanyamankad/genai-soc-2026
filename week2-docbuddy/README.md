@@ -8,7 +8,6 @@ Built for **Week 2 of Summer of Code** by [Dhanya Mankad](https://github.com/dha
 
 ## 🖼 App in Action
 
-> *(Add your screenshot here — app answering a question with citations)*
 > `screenshots/app_working.png`
 
 > *(Add your retrieved context screenshot here — accordion open)*
