@@ -114,7 +114,7 @@ Tested with two PDFs:
 **Test 3** — Asked a question requiring synthesis from both documents
 → Answer cited both documents correctly ✅
 
-> ![Multi Doc](screenshots/multi_doc.png
+> ![Multi Doc](screenshots/multi_doc.png)
 
 ---
 
