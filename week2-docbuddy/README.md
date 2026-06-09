@@ -8,9 +8,9 @@ Built for **Week 2 of Summer of Code** by [Dhanya Mankad](https://github.com/dha
 
 ## 🖼 App in Action
 
-![App Working](screenshots/app_working.png)
+> ![App Working](screenshots/app_working.png)
 
-![Retrieved Context](screenshots/retrieved_context.png)
+> ![Retrieved Context](screenshots/retrieved_context.png)
 ---
 
 ## 🤖 What is RAG?
@@ -89,13 +89,13 @@ The grounded prompt forces the model to refuse questions not covered in the docu
 **Expected:** "I don't have that information in the provided documents."
 **Result:** ✅ Passed
 
-> *(Add screenshot: `screenshots/anti_hallucination_1.png`)*
+> ![Anti Hallucination 1](screenshots/anti_hallucination_1.png)
 
 **Question asked:** "Who wrote Hamlet?"
 **Expected:** "I don't have that information in the provided documents."
 **Result:** ✅ Passed
 
-> *(Add screenshot: `screenshots/anti_hallucination_2.png`)*
+> ![Anti Hallucination 2](screenshots/anti_hallucination_2.png)
 
 ---
 
@@ -114,7 +114,7 @@ Tested with two PDFs:
 **Test 3** — Asked a question requiring synthesis from both documents
 → Answer cited both documents correctly ✅
 
-> *(Add screenshot: `screenshots/multi_doc.png`)*
+> ![Multi Doc](screenshots/multi_doc.png
 
 ---
 
