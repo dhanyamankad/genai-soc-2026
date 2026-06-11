@@ -16,7 +16,6 @@ This repository documents my journey of learning and building with Generative AI
 ---
 
 ## 📅 Week 0 — Environment Setup & Foundations
-
 ### Objectives Completed
 - ✅ Installed Python and VS Code
 - ✅ Configured Python Extension
@@ -30,7 +29,6 @@ This repository documents my journey of learning and building with Generative AI
 ---
 
 ## 🤖 Week 1 — PromptForge: Multi-Persona AI Assistant
-
 ### Project Overview
 PromptForge is a multi-persona AI assistant built using Python, Groq, and Gradio.
 The application demonstrates core prompt engineering techniques by allowing users to switch between different AI personalities, each with its own behavior, few-shot examples, and response style.
@@ -38,7 +36,6 @@ The application demonstrates core prompt engineering techniques by allowing user
 👉 [View Project](./week1-promptforge)
 
 ### ✨ Features
-
 🔹 **Technical Explainer**
 Explains technical concepts clearly using analogies and simple language.
 
@@ -54,7 +51,6 @@ Generates vivid, cinematic narrative prose.
 ---
 
 ## 📚 Week 2 — DocBuddy Pro: Q&A Over Multiple PDFs with Source Citations
-
 ### Project Overview
 DocBuddy Pro is a full RAG (Retrieval-Augmented Generation) pipeline built from scratch using Python, LangChain, ChromaDB, and Gradio. Upload multiple PDFs and ask questions across all of them — every answer cites the exact source document and page number. A collapsible panel shows exactly which chunks were retrieved, making the RAG process fully transparent.
 
@@ -70,7 +66,6 @@ DocBuddy Pro is a full RAG (Retrieval-Augmented Generation) pipeline built from 
 - **Multi-Document RAG** — correctly retrieves and cites across multiple PDFs simultaneously
 
 ### ✨ Features
-
 🔹 **Multi-PDF Upload**
 Upload multiple PDFs at once — lecture notes, research papers, policy documents.
 
@@ -85,3 +80,35 @@ Tested with out-of-scope questions — model correctly says "I don't have that i
 
 🔹 **Retrieved Context Panel**
 Collapsible accordion shows the exact chunks used to generate each answer — great for understanding how RAG works under the hood.
+
+---
+
+## 🧠 Week 3 — AgentX: Research Agent with Memory and Visible Reasoning
+### Project Overview
+AgentX is a Gradio chatbot backed by a LangGraph ReAct agent that researches any topic using web search. It maintains conversation memory across turns and exposes a collapsible "reasoning trace" panel so the user can see exactly which tools were called and why.
+
+👉 [View Project](./week3-agentx)
+
+### 🧠 Concepts Implemented
+- **ReAct Agent** — `create_react_agent` from LangGraph orchestrates tool selection and execution
+- **Tool Calling** — agent dynamically decides which tool to call based on the question type
+- **Conversation Memory** — `MemorySaver` checkpointer stores full history per session via UUID
+- **Streaming** — `agent.stream()` with `stream_mode="updates"` captures tool calls in real-time
+- **Reasoning Trace** — every tool call and result is logged and displayed in the UI
+- **Session Management** — each browser tab gets its own memory thread via `gr.State`
+
+### ✨ Features
+🔹 **DuckDuckGoSearchRun**
+Real-time web search for current events, latest news, and recent developments.
+
+🔹 **WikipediaQueryRun**
+Background and encyclopaedic information for historical facts and biographies.
+
+🔹 **get_current_date**
+Custom tool that returns today's date for time-sensitive queries.
+
+🔹 **Conversation Memory**
+Ask follow-up questions — the agent remembers everything from the same session.
+
+🔹 **Agent Reasoning Trace**
+Collapsible panel shows exactly which tools were called, with what inputs, and what results were returned.
