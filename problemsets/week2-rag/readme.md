@@ -62,11 +62,7 @@ The Gradio application will launch locally in the browser.
 ---
 
 # Screenshot of Gradio App
-
-Insert screenshot here:
-
 ![Gradio App](screenshot.png)
-
 ---
 
 # Anti-Hallucination Testing
