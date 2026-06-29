@@ -45,14 +45,27 @@ Run it:
 python app.py
 ```
 
-## 🧪 Test Cases
-| # | Scenario | Tool Verified | Screenshot |
-|---|----------|----------------|------------|
-| 1 | "Who was Ada Lovelace?" | `wikipedia_search` | `screenshots/test1_wikipedia.png` |
-| 2 | "What's the latest news about ISRO's next launch?" | `DuckDuckGoSearchRun` | `screenshots/test2_web.png` |
-| 3 | Document-specific question before any PDF uploaded | Graceful "no documents" message | `screenshots/test3_empty_kb.png` |
-| 4 | Question answerable from an uploaded PDF | `search_documents` | `screenshots/test4_rag.png` |
-| 5 | "What's in this picture?" after uploading an image | `describe_image` | `screenshots/test5_vision.png` |
+## 📸 Test Results
+
+### Test 1 — Wikipedia Lookup
+*"Who was Ada Lovelace?" → routed to `wikipedia_search`*
+![Test 1](screenshots/test1_wikipedia.png)
+
+### Test 2 — Live Web Search
+*"What's the latest news about ISRO's next launch?" → routed to `DuckDuckGoSearchRun`*
+![Test 2](screenshots/test2_web.png)
+
+### Test 3 — Empty Knowledge Base
+*Document-specific question asked before any PDF was uploaded → graceful "no documents" message instead of guessing*
+![Test 3](screenshots/test3_empty_kb.png)
+
+### Test 4 — RAG Over an Uploaded PDF
+*Question answerable from an uploaded PDF → routed to `search_documents`*
+![Test 4](screenshots/test4_rag.png)
+
+### Test 5 — Vision
+*"What's in this picture?" after uploading an image → routed to `describe_image`*
+![Test 5](screenshots/test5_vision.png)
 
 
 ## 🧠 How It Works
