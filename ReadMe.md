@@ -112,3 +112,37 @@ Ask follow-up questions — the agent remembers everything from the same session
 
 🔹 **Agent Reasoning Trace**
 Collapsible panel shows exactly which tools were called, with what inputs, and what results were returned.
+
+---
+
+## 🔭 Week 5 — HybridSight: RAG + Web Search + Vision Agent
+### Project Overview
+HybridSight is a hybrid LangGraph ReAct agent with four tools in one conversation: RAG over uploaded PDFs (reusing Week 2's ChromaDB pipeline), live web search, Wikipedia lookups, and a vision tool that describes uploaded images. The agent routes each question to the right tool automatically, with a reasoning trace panel showing exactly which tool(s) handled the answer.
+
+👉 [View Project](./week5-hybridsight)
+
+### 🧠 Concepts Implemented
+- **Multi-Tool Agent Routing** — the agent chooses between 4 tools per question based on system-prompt routing rules
+- **RAG as a Tool** — `search_documents` wraps the Week 2 chunk → embed → store ChromaDB retriever behind an `@tool`
+- **Vision as a Tool** — `describe_image` sends the most recently uploaded image to a Groq vision model (`qwen/qwen3.6-27b`)
+- **Graceful Degradation** — empty ChromaDB, missing image, and failed Wikipedia calls all return readable messages instead of crashing
+- **Reasoning Traces** — every tool call and result is streamed and logged in real-time, same mechanism as Week 3
+
+### ✨ Features
+🔹 **PDF + Image Upload in One App**
+Upload PDFs for RAG and an image for vision lookups side by side.
+
+🔹 **Automatic Tool Routing**
+The agent decides whether to search documents, the web, Wikipedia, or analyze the image — no manual mode switching.
+
+🔹 **search_documents**
+RAG over your own uploaded PDFs, returning chunks with source filename and page number.
+
+🔹 **describe_image**
+Answers questions about whatever image was most recently uploaded.
+
+🔹 **DuckDuckGoSearchRun + wikipedia_search**
+Live web results for current events, real Wikipedia lookups for general knowledge — with a DuckDuckGo-scoped fallback if Wikipedia's API is unreachable.
+
+🔹 **Agent Reasoning Trace**
+Same collapsible panel as Week 3, now showing routing across all 4 tools.
