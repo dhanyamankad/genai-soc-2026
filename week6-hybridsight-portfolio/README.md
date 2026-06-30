@@ -1,3 +1,15 @@
+> The block below is Hugging Face Spaces configuration metadata (it renders as a table on GitHub, but tells HF how to run the app) — skip to "👁️ HybridSight" for the actual README.
+
+---
+title: HybridSight
+emoji: 👁️
+colorFrom: green
+colorTo: blue
+sdk: gradio
+sdk_version: "6.17.3"
+app_file: app.py
+pinned: false
+---
 ---
 title: HybridSight
 emoji: 👁️
